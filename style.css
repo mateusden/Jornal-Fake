@@ -15,7 +15,7 @@ header {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 700;
     font-size: 3rem;
-    object-fit: contain;
+    object-fit: cover;
     background: url(assets/warning.webp);
     display: grid;
     place-items: center;
@@ -125,8 +125,8 @@ audio {
   margin-bottom: 1.3vh;
 }
 .play-btn {
-  width: 10vw;
-  height: 10vw;
+  width: 4vw;
+  height: 4vw;
   border-radius: 50%;
   border: none;
   background: linear-gradient(135deg, #667eea 0%, #764ba2);
@@ -166,8 +166,8 @@ audio {
   border: none;
 }
 .volume-btn {
-  width: 2.7vw;
-  height: 2.7vw;
+  width: 4vw;
+  height: 4vw;
   border-radius: 50%;
   background: transparent;
   border: 2px solid #667eea;
@@ -192,109 +192,7 @@ p {
   width: 38vw;
   margin-left: 30vw;
 }
-@media (width: 700px) {
-  .h1 {
-    font-size: 12px;
-    width: 85vw;
-    margin-left: 5vw;
-    margin-bottom: 5vh;
-    margin-top: 2vh;
-  }
-  img {
-    width: 88vw;
-    margin-left: 5vw;
-    margin-bottom: 5vh;
-    margin-top: 2vh;
-  }
-  p {
-    font-family: "Inter";
-    font-size: 1.75rem;
-    line-height: 1.45;
-    font-family: 600;
-    width: 88vw;
-    margin-left: 2vw;
-  }
-  .player {
-    background-color: rgba(255, 255, 255, 0.95);
-    border-radius: 20px;
-    padding: 30px;
-    height: 32vh;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-    max-width: 36.5vw;
-    margin-bottom: 9vh;
-    margin-top: 6.26vh;
-    margin-left: 28.7vw;
-  }
-  audio {
-    display: none;
-  }
-  .controls {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 1.3vh;
-  }
-  .play-btn {
-    width: 2.7vw;
-    height: 2.7vw;
-    border-radius: 50%;
-    border: none;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2);
-    color: white;
-    font-size: 30px;
-    cursor: pointer;
-    transition: transform 0.2s;
-  }
-  .play-btn:hover {
-    transform: scale(1.05);
-  }
-  .progress-bar {
-    flex: 1;
-    height: 1vh;
-    -webkit-appearance: none;
-    appearance: none;
-    background: #ddd;
-    border-radius: 15px;
-    outline: none;
-    cursor: pointer;
-  }
-  .progress-bar::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 1vw;
-    height: 1vw;
-    background: #667eea;
-    border-radius: 50%;
-    cursor: pointer;
-  }
-  .progress-bar::-moz-range-thumb {
-    width: 1vw;
-    height: 1vw;
-    background: #667eea;
-    border-radius: 50%;
-    cursor: pointer;
-    border: none;
-  }
-  .volume-btn {
-    width: 2.7vw;
-    height: 2.7vw;
-    border-radius: 50%;
-    background: transparent;
-    border: 2px solid #667eea;
-    font-size: 30px;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-  .volume-btn:hover {
-    background: rgba(102, 126, 234, 0.1);
-  }
-  .time-info {
-    display: flex;
-    justify-content: space-between;
-    color: #666;
-    font-size: 16px;
-  }
-}
+
 @media (orientation: portrait) {
   header {
     display: flex;
@@ -302,6 +200,14 @@ p {
     gap: 4vw;
     border-bottom: 1px solid gray;
     justify-content: center;
+  }
+  .alert{
+    height: 27vh;
+    font-size: 1.95rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    object-fit: fill;
+    background: url(assets/warning.webp);
+    background-size: 100% 100%;
   }
   header h1{
     font-size: 3.6rem;
