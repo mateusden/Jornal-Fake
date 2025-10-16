@@ -304,8 +304,8 @@ p {
     border: none;
   }
   .volume-btn {
-    width: 11vw;
-    height: 11vw;
+    width: 8vw;
+    height: 8vw;
     border-radius: 50%;
     background: transparent;
     border: 2.2px solid #667eea;
