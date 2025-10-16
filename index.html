@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vale Tudo - Quem matou Odete Roitman</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>DDLC News</h1>
+        <div class="h2">
+            <h2><i class='bx bx-money-withdraw'></i><a style=" text-decoration: none" href="https://casuarinas.com.br">Tigrinho</a></h2>
+            <h2><i class='bx bx-football' ></i><a href="https://www.bet365.bet.br/#/HO/">Bet</a></h2>
+            <h2 class="valor"><i class='bx bx-dollar-circle' ></i>Dólar<i class='bx bx-up-arrow-alt' ></i>R$8,09</h2>
+        </div>
+    </header>
+    <h2 class="alert">Esta notícia não tem intuito de ser verdadeira, é só uma piada</h2>
+    <h1 class="h1">Quem matou Odete Roitman? Não foi quem você queria</h1>
+    <img src="assets/odete-freitas-mario-sergio-e-consuelo-em-vale-tudo-1758838859835_v2_900x506.jpg.png" alt="">
+    <button id="compartilhar" onclick="compartilhar()"><i class='bx bx-send' ></i></button>
+    
+    <p>Após um longo dia de trabalho, a equipe da Vale Tudo finalmente conseguiu achar quem matou a Odete Roitman. E não foi quem você esperava, porque essa pessoa não estava nem no elenco da novela "Vale Tudo".</p>
+    <p class="p">Foi um dos donos do canal <a href="https://www.youtube.com/@OnlyPlays-r2w">Onlyplays</a>, Davi Soares, que nem chegou a jogar em seu canal falido, que estava supostamente passeando em São Paulo</p>
+    <img class="img" src="assets/WhatsApp Image 2025-10-13 at 16.03.15.jpeg" alt="">
+    <p>Porém, alguns zeladores revelaram ver ele conversando com o diretor falando sobre ele ter matado Odete. Fora que em alguns aúdios que foram acessados, ele revelava vontades estranhas.</p>
+    <div class="player">
+        <div class="controls">
+            <button class="play-btn" id="playBtn"><i class='bx bx-play'></i></button>
+            <input type="range" class="progress-bar" id="progress" value="0" min="0" max="100">
+            <button class="volume-btn" id="volumeBtn"><i class='bx bx-volume-full'></i></button>
+        </div>
+
+        <div class="time-info">
+            <span id="currentTime">0:00</span>
+            <span id="duration">0:00</span>
+        </div>
+
+        <audio id="audio">
+            <source src="assets/daviaudio.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
