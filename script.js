@@ -48,7 +48,7 @@ function formatTime(seconds) {
 }
 
 function compartilhar() {
-    const texto = encodeURIComponent("Bah, dá uma olhada nessa notícia! http://192.168.0.89:5500/jornal/index.html");
+    const texto = encodeURIComponent("Bah, dá uma olhada nessa notícia! https://mateusden.github.io/Jornal-Fake/ ");
     const url = `https://api.whatsapp.com/send?text=${texto}`;
     window.open(url, '_blank');
 }
